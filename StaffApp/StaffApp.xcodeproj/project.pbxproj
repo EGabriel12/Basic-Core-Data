@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		89A62A9B25CA37AE00936F4F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A62A9A25CA37AE00936F4F /* SceneDelegate.swift */; };
 		89A62A9D25CA37AE00936F4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A62A9C25CA37AE00936F4F /* ViewController.swift */; };
 		89A62AA225CA37B000936F4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89A62AA125CA37B000936F4F /* Assets.xcassets */; };
+		89A62ABD25CA3CAD00936F4F /* Stevia in Frameworks */ = {isa = PBXBuildFile; productRef = 89A62ABC25CA3CAD00936F4F /* Stevia */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89A62ABD25CA3CAD00936F4F /* Stevia in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +127,9 @@
 			dependencies = (
 			);
 			name = StaffApp;
+			packageProductDependencies = (
+				89A62ABC25CA3CAD00936F4F /* Stevia */,
+			);
 			productName = StaffApp;
 			productReference = 89A62A9525CA37AE00936F4F /* StaffApp.app */;
 			productType = "com.apple.product-type.application";
@@ -152,6 +157,9 @@
 				Base,
 			);
 			mainGroup = 89A62A8C25CA37AE00936F4F;
+			packageReferences = (
+				89A62ABB25CA3CAD00936F4F /* XCRemoteSwiftPackageReference "Stevia" */,
+			);
 			productRefGroup = 89A62A9625CA37AE00936F4F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -362,6 +370,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		89A62ABB25CA3CAD00936F4F /* XCRemoteSwiftPackageReference "Stevia" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/freshOS/Stevia";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		89A62ABC25CA3CAD00936F4F /* Stevia */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 89A62ABB25CA3CAD00936F4F /* XCRemoteSwiftPackageReference "Stevia" */;
+			productName = Stevia;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 89A62A8D25CA37AE00936F4F /* Project object */;
 }
